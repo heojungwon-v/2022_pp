@@ -1,0 +1,131 @@
+@import "fontvw.scss";
+@import "reset.css";
+ 
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    overflow: hidden;
+    header{ 
+        position: fixed;
+        top:0;
+        width: 100%; 
+        padding:vw(20px 0);
+        .container{
+            display: flex;
+            padding:vw( 0 50px);
+            .flex-col{
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 50%; 
+            }
+            a{
+                font-weight: bold;
+                font-size:vw(30px);
+                flex-direction: row;
+            }
+            .nav-container{
+                display: flex;
+                ul{
+                    display: flex;
+                    flex-grow: 1;
+                    li{
+                        margin-right:vw( 34px ); 
+                        a{ 
+                            display:inline-block; vertical-align: top;
+                            font-size:vw(20px);
+                            font-weight: 500;
+                            @include en;
+                        } 
+                        &:last-child{
+                            margin-left:auto;
+                            margin-right:0;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .wrapper{
+        width: 100%;
+        .flex-grow{
+            flex-grow: 1;
+            main{
+                position: relative;
+                z-index: 2;
+                section{
+                    position: relative;
+                    .section-container{  width: 100%; height: 100%;
+                        .section-holder{
+                            position: relative;
+                            display: flex; padding:vw( 200px 0 250px 0 );
+                            min-height: calc(100vh + 1.5rem);
+                            .section-flex{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                padding:vw(20px 50px 0);
+                                max-width: vw(19520px);
+                                > h1{
+                                    padding-bottom: vw(200px);
+                                    div{ 
+                                        font-size: vw(110px); 
+                                        @include enb; 
+                                        font-weight: 500; 
+                                        letter-spacing: vw(1px);
+                                        line-height: 1;
+                                    }
+                                }
+                                .grid-container{
+                                    position: relative;
+                                    padding:vw(20px 0);
+                                    .grid-list{
+                                        display: grid;
+                                        grid-template-columns: repeat(12,minmax(0,1fr));
+                                        row-gap:vw(30px);
+                                        li{
+                                            grid-column: span 3/span 3;
+                                            @include en;  
+                                            font-size:vw(20px);                                              
+                                            &:first-child{
+                                                grid-column: span 6/span 6;
+                                            }
+                                            a{
+                                               display: block;
+                                               span,
+                                               i{
+                                                display: inline-block;
+                                               }
+                                               span{
+                                                border:vw(1px) solid #151515;
+                                                font-size:vw(20px);
+                                                padding:vw(10px 14px);
+                                                border-radius: vw(50px);
+                                               }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:before{
+                                content: '';
+                                display:block;
+                                width: 100vw;
+                                height: vw(1px);
+                                position: absolute;
+                                background: #151515;
+                                top:vw(760px);
+                                left: 0;
+                                right: 0;
+                                opacity: .3;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+/****rem********/
+@import "reset.css";
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  overflow: hidden;
+}
+body header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.0416666667vw 0;
+}
+body header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2.6041666667vw;
+}
+body header .container .flex-col {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+body header .container a {
+  font-weight: bold;
+  font-size: 1.5625vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body header .container .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header .container .nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+body header .container .nav-container ul li {
+  margin-right: 1.7708333333vw;
+}
+body header .container .nav-container ul li a {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+}
+body header .container .nav-container ul li:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+body .wrapper {
+  width: 100%;
+}
+body .wrapper .flex-grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+body .wrapper .flex-grow main {
+  position: relative;
+  z-index: 2;
+}
+body .wrapper .flex-grow main section {
+  position: relative;
+}
+body .wrapper .flex-grow main section .section-container {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .flex-grow main section .section-container .section-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10.4166666667vw 0 13.0208333333vw 0;
+  min-height: calc(100vh + 1.5rem);
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1.0416666667vw 2.6041666667vw 0;
+  max-width: 1016.6666666667vw;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex > h1 {
+  padding-bottom: 10.4166666667vw;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex > h1 div {
+  font-size: 5.7291666667vw;
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.0520833333vw;
+  line-height: 1;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container {
+  position: relative;
+  padding: 1.0416666667vw 0;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  row-gap: 1.5625vw;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li {
+  grid-column: span 3/span 3;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.0416666667vw;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li:first-child {
+  grid-column: span 6/span 6;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li a {
+  display: block;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li a span,
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li a i {
+  display: inline-block;
+}
+body .wrapper .flex-grow main section .section-container .section-holder .section-flex .grid-container .grid-list li a span {
+  border: 0.0520833333vw solid #151515;
+  font-size: 1.0416666667vw;
+  padding: 0.5208333333vw 0.7291666667vw;
+  border-radius: 2.6041666667vw;
+}
+body .wrapper .flex-grow main section .section-container .section-holder:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 0.0520833333vw;
+  position: absolute;
+  background: #151515;
+  top: 39.5833333333vw;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
