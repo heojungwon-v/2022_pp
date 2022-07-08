@@ -4,7 +4,7 @@ $vw-callback: false !default;
 $vw-px-only: false !default;
 
 @function vw-separator($list, $separator: false) {
-	@if $separator == "comma" or $separator == "space" {
+	@if $separator == "comma" or $separator == "space" { 
 		@return append($list, null, $separator);
 	} 
 	
